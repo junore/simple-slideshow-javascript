@@ -1,0 +1,82 @@
+/* Define the main container for the slideshow */
+.slideshow {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Define the container for the slides */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Define the individual slides */
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+/* Style the images inside the slides */
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Define the "previous" and "next" buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -35px;
+    padding: 28px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Style the "next" button */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Add a hover effect for the buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Define the container for the dots navigation */
+.dots-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* Define individual dots for navigation */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Style the active dot */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Remove margin from figures */
+figure {
+    margin: 0;
+}

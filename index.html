@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>A Basic HTML5 Template</title>
+  <title>A simple HTML5 Javascript slideshow</title>
   <meta name="description" content="A simple HTML5 Javascript images slideshow.">
   <meta name="author" content="junore">
 
@@ -19,13 +19,44 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">-->
 
-  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
 
+  <div class="slideshow">
+    <div class="slideshow-container">
 
+      <div class="slide">
+        <figure class="image brand__header-img hero">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1661956602153-23384936a1d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=1440&q=60" type="image/jpg" media="(min-width:768.1px)">
+            <img src="https://images.unsplash.com/photo-1661956602153-23384936a1d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60" alt="image alt">
+          </picture>
+        </figure>
+      </div>
+  
+      <div class="slide">
+        <figure class="image brand__header-img hero">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1675774553124-4a1509fd4f65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=1440&q=60" type="image/jpg" media="(min-width:768.1px)">
+            <img src="https://images.unsplash.com/photo-1675774553124-4a1509fd4f65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60" alt="image alt">
+          </picture>
+        </figure>
+      </div>
+  
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+    </div>
+  </div>
 
 
   <script src="/js-slideshow.js"></script>
