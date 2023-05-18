@@ -1,0 +1,30 @@
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card {
+    min-width: 50%;
+    /* 2 cards for width <= 1023px */
+    flex-shrink: 0;
+    background-color: #f3f3f3;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+@media (min-width: 1024px) {
+    .card {
+        min-width: 25%;
+        /* 4 cards for width > 1023px */
+    }
+}
+
+.inactive {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
