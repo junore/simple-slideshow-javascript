@@ -1,13 +1,13 @@
-.carousel-container {
+.carousel {
     overflow: hidden;
 }
 
-.carousel-slide {
+.carousel .carousel-container {
     display: flex;
     transition: transform 0.4s ease-in-out;
 }
 
-.card {
+.carousel .carousel-item {
     min-width: 50%;
     /* 2 cards for width <= 1023px */
     flex-shrink: 0;
@@ -18,13 +18,13 @@
 }
 
 @media (min-width: 1024px) {
-    .card {
+    .carousel .carousel-item {
         min-width: 25%;
         /* 4 cards for width > 1023px */
     }
 }
 
-.inactive {
+.carousel .inactive {
     opacity: 0.5;
     cursor: not-allowed;
 }

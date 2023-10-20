@@ -1,0 +1,74 @@
+body {
+    font-family: "Helvetica", Sans-Serif;
+}
+
+.carousel-wrap {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel .carousel-container {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel .carousel-item {
+    width: 50%;
+    /* 2 cards for width <= 1023px */
+    flex-shrink: 0;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.carousel button {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 20px);
+}
+
+.carousel button#prevBtn {
+    left: -60px;
+}
+
+.carousel button#nextBtn {
+    right: -60px;
+}
+
+.carousel .inactive {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+
+@media (min-width: 1024px) {
+    .carousel .carousel-item {
+        width: 25%;
+        /* 4 cards for width > 1023px */
+    }
+}
+
+
+
+/* ESTILOS CARTOES C21 */
+
+.award-card {
+    background: #F8F9FA;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(190, 175, 135, 0.5);
+}
+.award-card p{
+    font-size: 12px;
+}
